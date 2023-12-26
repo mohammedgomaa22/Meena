@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بودكاست مينا</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="shortcut icon" href="./data/pic/logo.png" type="image/x-icon" loading="lazy">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        
+</head>
+<body class="bg-[#f9f7f2]">
+    <div class="relative overflow-hidden min-h-[100vh]" id="app">
+        <!-- ********** Start Navbar ********** -->
+        <nav class="h-[70px] fixed top-0 w-full z-20 border-b flex items-center bg-[#f9f7f2]">
+            <div class="container px-5 py-2 xl:px-40 mx-auto flex justify-between items-center">
+                <div class="flex gap-8 justify-between items-center flex-1">
+                    <!-- Logo -->
+                    <div class="logo w-[100px] max-h-[80px] -mt-4 rounded-md overflow-hidden">
+                        <a href="#">
+                            <img src="./data/pic/logo.png" alt="logo" class="w-full h-full" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="row flex justify-between items-center">
+                        <!-- UL Navbar -->
+                        <div class="ul flex gap-8 items-center py-4">
+                            <!-- Nav in full screen -->
+                            <div class="flex gap-16">
+                                <ul class="hidden lg:flex gap-8 font-medium text-white items-center">
+                                    <li>
+                                        <a href="#"
+                                            class="text-[#2b79d7] relative font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-gray-200"
+                                            aria-label="Read more about Seminole tax hike">
+                                            <i class="fa-solid fa-house"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#about_us"
+                                        class="text-[#2b79d7] font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-gray-200"
+                                            aria-label="Read more about Seminole tax hike">
+                                            <i class="fas fa-address-card"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact_us"
+                                            class="text-[#2b79d7] font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-gray-200"
+                                            aria-label="Read more about Seminole tax hike">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav in Mobile -->
+                            <ul
+                                class="sidebar w-full flex flex-col py-3 absolute left-0 top-[70px] -translate-x-[100%] bg-[#fff] text-gray-700 duration-500">
+                                <li>
+                                    <a href="#"
+                                        class="w-full text-[#2b79d7] px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px] border-b"
+                                        aria-label="Read more about Seminole tax hike">
+                                        <i class="fa-solid fa-house ml-3"></i>
+                                        الـرئيسيـة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about_us"
+                                        class="w-full text-[#2b79d7] px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px] border-b"
+                                        aria-label="Read more about Seminole tax hike">
+                                        <i class="fas fa-address-card ml-3"></i>
+                                        عن البودكاست
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact_us"
+                                        class="w-full text-[#2b79d7] px-4 py-2 hover:pr-6 duration-300 block font-bold text-[20px]"
+                                        aria-label="Read more about Seminole tax hike">
+                                        <i class="fa-solid fa-envelope ml-3"></i>
+                                        تواصل معنا
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Toggler -->
+                <div class="cursor-pointer lg:hidden w-[30px] text-gray-700">
+                    <span class="toggler fas fa-bars block h-full w-full"></span>
+                </div>
+            </div>
+        </nav>
+        <!-- ********** End Navbar ********** -->
+        <!-- ********** Start Watching ********** -->
+        <section id="watching" class="mt-[70px] py-10">
+            <div class="container px-5 py-2 xl:px-40 mx-auto">
+                <h2 class="main-title w-fit py-2 px-4 text-xl font-bold text-[#f9f7f2] rounded-md rounded-tl-[60px] bg-gradient-to-l from-[#2b79d7] to-[#6CE7FF]">
+                    <i class="fas fa-play ml-1"></i>
+                    الحلقـات المرئيــة
+                </h2>
+                <div class="boxes mt-3 py-10 border-t grid lg:grid-cols-2 gap-5">
+                    <div class="box">
+                        <a href="https://www.youtube.com/channel/UCapl2tupyNTwNpbiCFzU8qQ " target="_blank" class="h-36 flex gap-3 rounded-lg hover:shadow-md duration-300">
+                            <div class="img h-full w-44 min-w-44 relative border rounded-lg overflow-hidden">
+                                <span class="absolute h-6 w-6 top-[5px] right-[5px] rounded-full bg-[#2b79d750] text-[#f9f7f2] flex items-center justify-center">
+                                    <i class="fas fa-play"></i>
+                                </span>
+                                <img src="./data/pic/h1.webp" alt="h1" loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <div class="text flex flex-col justify-between pb-3 text-[#2b79d7]">
+                                <div class="head">
+                                    <h3 class="title text-lg font-semibold">المبيعات والتسويق</h3>
+                                    <p class="details mt-2">المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان !! !!</p>
+                                </div>
+                                <p class="footer-box font-medium text-gray-400">د.خـالــد الأحـمــري</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.youtube.com/channel/UCapl2tupyNTwNpbiCFzU8qQ " target="_blank" class="h-36 flex gap-3 rounded-lg hover:shadow-md duration-300">
+                            <div class="img h-full w-44 min-w-44 relative border rounded-lg overflow-hidden">
+                                <span class="absolute h-6 w-6 top-[5px] right-[5px] rounded-full bg-[#2b79d750] text-[#f9f7f2] flex items-center justify-center">
+                                    <i class="fas fa-play"></i>
+                                </span>
+                                <img src="./data/pic/h1.webp" alt="h1" loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <div class="text flex flex-col justify-between pb-3 text-[#2b79d7]">
+                                <div class="head">
+                                    <h3 class="title text-lg font-semibold">المبيعات والتسويق</h3>
+                                    <p class="details mt-2">المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان !! !!</p>
+                                </div>
+                                <p class="footer-box font-medium text-gray-400">د.خـالــد الأحـمــري</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ********** End Watching ********** -->
+        <!-- ********** Start Listening ********** -->
+        <section id="listening" class="py-10">
+            <div class="container px-5 py-2 xl:px-40 mx-auto">
+                <h2 class="main-title w-fit py-2 px-4 text-xl font-bold text-[#f9f7f2] rounded-md rounded-tl-[60px] bg-gradient-to-l from-[#2b79d7] to-[#6CE7FF]">
+                    <i class="fas fa-headphones-simple ml-1"></i>
+                    الحلقـات المسمـوعــة
+                </h2>
+                <div class="boxes mt-3 py-10 border-t grid lg:grid-cols-2 gap-5">
+                    <div class="box">
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjc2MTg2NTA1Mi9zb3VuZHMucnNz?sa=X&ved=0CAMQ4aUDahcKEwiAy-jGseX6AhUAAAAAHQAAAAAQAQ&hl=ar" target="_blank" class="h-36 flex gap-3 rounded-lg hover:shadow-md duration-300">
+                            <div class="img h-full w-44 min-w-44 relative border rounded-lg overflow-hidden">
+                                <span class="absolute h-6 w-6 top-[5px] right-[5px] rounded-full bg-[#2b79d750] text-[#f9f7f2] flex items-center justify-center">
+                                    <i class="fas fa-headphones-simple"></i>
+                                </span>
+                                <img src="./data/pic/المحامي عبدالكريم الشمري.jpeg" alt="h1" loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <div class="text flex flex-col justify-between pb-3 text-[#2b79d7]">
+                                <div class="head">
+                                    <h3 class="title text-lg font-semibold">عنوان الحلقة</h3>
+                                    <p class="details mt-2">المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان !! !!</p>
+                                </div>
+                                <p class="footer-box font-medium text-gray-400">المحامي عبدالكريم الشمري</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjc2MTg2NTA1Mi9zb3VuZHMucnNz?sa=X&ved=0CAMQ4aUDahcKEwiAy-jGseX6AhUAAAAAHQAAAAAQAQ&hl=ar" target="_blank" class="h-36 flex gap-3 rounded-lg hover:shadow-md duration-300">
+                            <div class="img h-full w-44 min-w-44 relative border rounded-lg overflow-hidden">
+                                <span class="absolute h-6 w-6 top-[5px] right-[5px] rounded-full bg-[#2b79d750] text-[#f9f7f2] flex items-center justify-center">
+                                    <i class="fas fa-headphones-simple"></i>
+                                </span>
+                                <img src="./data/pic/نايف بن طامي.jpg" alt="h1" loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <div class="text flex flex-col justify-between pb-3 text-[#2b79d7]">
+                                <div class="head">
+                                    <h3 class="title text-lg font-semibold">عنوان الحلقة</h3>
+                                    <p class="details mt-2">المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان !! !!</p>
+                                </div>
+                                <p class="footer-box font-medium text-gray-400">نايف بن طامي</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjc2MTg2NTA1Mi9zb3VuZHMucnNz?sa=X&ved=0CAMQ4aUDahcKEwiAy-jGseX6AhUAAAAAHQAAAAAQAQ&hl=ar" target="_blank" class="h-36 flex gap-3 rounded-lg hover:shadow-md duration-300">
+                            <div class="img h-full w-44 min-w-44 relative border rounded-lg overflow-hidden">
+                                <span class="absolute h-6 w-6 top-[5px] right-[5px] rounded-full bg-[#2b79d750] text-[#f9f7f2] flex items-center justify-center">
+                                    <i class="fas fa-headphones-simple"></i>
+                                </span>
+                                <img src="./data/pic/د. أحمد أبوزور.jpg" alt="h1" loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <div class="text flex flex-col justify-between pb-3 text-[#2b79d7]">
+                                <div class="head">
+                                    <h3 class="title text-lg font-semibold">عنوان الحلقة</h3>
+                                    <p class="details mt-2">المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان !! !!</p>
+                                </div>
+                                <p class="footer-box font-medium text-gray-400">د.أحمد أبوزور</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjc2MTg2NTA1Mi9zb3VuZHMucnNz?sa=X&ved=0CAMQ4aUDahcKEwiAy-jGseX6AhUAAAAAHQAAAAAQAQ&hl=ar" target="_blank" class="h-36 flex gap-3 rounded-lg hover:shadow-md duration-300">
+                            <div class="img h-full w-44 min-w-44 relative border rounded-lg overflow-hidden">
+                                <span class="absolute h-6 w-6 top-[5px] right-[5px] rounded-full bg-[#2b79d750] text-[#f9f7f2] flex items-center justify-center">
+                                    <i class="fas fa-headphones-simple"></i>
+                                </span>
+                                <img src="./data/pic/د. محمد العقل.jpg" alt="h1" loading="lazy" class="w-full h-full object-cover">
+                            </div>
+                            <div class="text flex flex-col justify-between pb-3 text-[#2b79d7]">
+                                <div class="head">
+                                    <h3 class="title text-lg font-semibold">عنوان الحلقة</h3>
+                                    <p class="details mt-2">المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان المبيعات والتسويق جزء لا يتجزأ من حياة أي انسان !! !!</p>
+                                </div>
+                                <p class="footer-box font-medium text-gray-400">د.محمد العقل</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ********** End Listening ********** -->
+        <!-- ********** Start Guests ********** -->
+        <section id="guests" class="py-10">
+            <div class="container px-5 py-2 xl:px-40 mx-auto">
+                <h2 class="main-title w-fit py-2 px-4 text-xl font-bold text-[#f9f7f2] rounded-md rounded-tl-[60px] bg-gradient-to-l from-[#2b79d7] to-[#6CE7FF]">
+                    <i class="fas fa-users ml-1"></i>
+                    ضـيـــوف مـيـنــا
+                </h2>
+                <!-- Swiper -->
+                <div class="swiper mySwiper h-full max-w-full mt-3 py-10 border-t">
+                    <div class="swiper-wrapper">
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/المحامي عبدالكريم الشمري.jpeg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">المحامي عبدالكريم الشمري</h3>
+                                    <p class="text-base">مالك ومؤسس شركة نصير للمحاماة والاستشارات القانونية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. محمد العقل.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د.محمد العقل</h3>
+                                    <p class="text-base">طبيب وإداري مهتم ببرنامج تحول الرعاية الصحية والتحول المهني والوظيفي في القطاع الصحي</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. سلطان الرويلي.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د.سلطان الرويلي</h3>
+                                    <p class="text-base">رئيس نادي الثقافة الصحية بجامعة الجوف</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/نورة العبيلي.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">أ. نورة العبيلي</h3>
+                                    <p class="text-base">اخصائية تثقيف سكري ومدربة لمضخات الانسولين</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. خالد الاحمري.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د. خالد الأحمري</h3>
+                                    <p class="text-base">طبيب أسنان وإداري مهتم في مجال الشركات والصناعات الطبية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. عبدالاله السقير.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د. عبدالاله السقير</h3>
+                                    <p class="text-base">أخصائي تقويم الأسنان والفكين خريج جامعة القاهرة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/مشاري .jpeg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د. مشاري العليط</h3>
+                                    <p class="text-base">طبيب اسنان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. أحمد أبوزور.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium"> د. أحمد أبو زور</h3>
+                                    <p class="text-base">أخصائى تقويم الأسنان</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. تركي المحمدي.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د. تركي المحمدي</h3>
+                                    <p class="text-base">طبيب مقيم في جراحة الوجه والفكين</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. نوادر العنزي.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium"> د. نوادر العنزي</h3>
+                                    <p class="text-base">طبيبة امتياز</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. سيف العبدلي.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د. سيف العبدلي</h3>
+                                    <p class="text-base">استشاري مشارك في جراحة الوجه والفكين</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="box">
+                                <div class="data">
+                                    <img src="./data/pic/د. محمد التيماني.jpg" alt="">
+                                    <div class="social">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h3 class="text-xl font-medium">د. محمد التيماني</h3>
+                                    <p class="text-base">أخصائي تقويم الأسنان حاصل على الزمالة الفرنسية في تقويم الأسنان والفكين</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- guest -->
+                        <!-- <div class="guest swiper-slide cursor-grab flex justify-center">
+                            <div class="h-48 flex gap-3">
+                                <div class="img h-44 w-44 min-w-44 relative border-2 rounded-full overflow-hidden">
+                                    <img src="./data/pic/المحامي عبدالكريم الشمري.jpeg" alt="h1" loading="lazy"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="text flex flex-col justify-between py-3 text-[#2b79d7]">
+                                    <div class="head">
+                                        <h3 class="title text-lg font-semibold">المحامي عبدالكريم الشمري</h3>
+                                        <p class="details mt-1">مالك ومؤسس شركة نصير للمحاماة والاستشارات القانونية</p>
+                                    </div>
+                                    <p class="footer-box font-medium text-gray-400">المحامي عبدالكريم الشمري</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- ********** End Guests ********** -->
+        <!-- ********** Start statistics ********** -->
+        <section id="statistics" class="py-10">
+            <div class="container px-5 py-2 xl:px-40 mx-auto">
+                <h2 class="main-title w-fit py-2 px-4 text-xl font-bold text-[#f9f7f2] rounded-md rounded-tl-[60px] bg-gradient-to-l from-[#2b79d7] to-[#6CE7FF]">
+                    <i class="fas fa-chart-column ml-1"></i>
+                    احصـائـيــات مـيـنــا
+                </h2>
+                <div class="boxes mt-3 py-10 border-t">
+                    <!-- BOX-1 -->
+                    <div class="box rounded-lg overflow-hidden">
+                        <i class="fas fa-headphones-simple text-5xl text-[#222]"></i>
+                        <div class="flex justify-center items-center text-[50px] text-[#222]">
+                            +
+                            k
+                            <span class="num" data-number="30">0</span>
+                        </div>
+                        <span class="text text-xl">مستمع</span>
+                    </div>
+                    <!-- BOX-2 -->
+                    <div class="box rounded-lg overflow-hidden">
+                        <i class="fas fa-globe text-5xl text-[#222]"></i>
+                        <div class="flex justify-center items-center text-[50px] text-[#222]">
+                            +
+                            <span class="num" data-number="4">0</span>
+                        </div>
+                        <span class="text text-xl">دول استماع</span>
+                    </div>
+                    <!-- BOX-3 -->
+                    <div class="box rounded-lg overflow-hidden">
+                        <i class="fab fa-buffer text-5xl text-[#222]"></i>
+                        <div class="flex justify-center items-center text-[50px] text-[#222]">
+                            +
+                            <span class="num" data-number="3">0</span>
+                        </div>
+                        <span class="text text-xl">منصات للنشر</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ********** End statistics ********** -->
+        <!-- ********** Start Partners ********** -->
+        <section id="partners" class="py-10">
+            <div class="container px-5 py-2 xl:px-40 mx-auto">
+                <h2 class="main-title w-fit py-2 px-4 text-xl font-bold text-[#f9f7f2] rounded-md rounded-tl-[60px] bg-gradient-to-l from-[#2b79d7] to-[#6CE7FF]">
+                    <i class="fas fa-building ml-1"></i>
+                    شــركــاء مـيـنــا
+                </h2>
+                <div class="boxes mt-3 py-10 border-t grid grid-cols-2 gap-[1px]">
+                    <!-- Box1 -->
+                    <div class="box bg-[#A3AFAB] p-3 rounded-tl-full">
+                        <div class="img h-36 w-36 min-w-36 mx-auto rounded-full overflow-hidden border-2">
+                            <img src="./data/pic/شريك الموسم الثالث.jpg" alt="partner" loading="lazy" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="title text-2xl font-semibold text-center py-2 mt-2 text-[#FCFEFD]">شريـك المـوســم الثـالــث</h3>
+                    </div>
+                    <!-- Box2 -->
+                    <div class="box bg-[#1A4049] p-3 rounded-tr-full">
+                        <div class="img h-36 w-36 min-w-36 mx-auto rounded-full overflow-hidden border-2">
+                            <img src="./data/pic/شريك الموسم الرابع.jpeg" alt="partner" loading="lazy" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="title text-2xl font-semibold text-center py-2 mt-2 text-[#C88673]">شريـك المـوســم الــرابــع</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ********** End Partners ********** -->
+        <!-- ********** Start Footer ********** -->
+        <footer class="">
+            <div class="contact py-3 border-b">
+                <div class="container px-5 xl:px-40 mx-auto flex gap-2 items-center justify-center">
+                    <div class="x">
+                        <a href="https://twitter.com/MenaPodcast" target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#222] hover:bg-[#111] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-xing"></i>
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="insta text-white text-2xl cursor-pointer bg-blue-600 hover:bg-blue-700 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="youtube">
+                        <a href="https://www.youtube.com/channel/UCapl2tupyNTwNpbiC" target="_blank" class="insta text-white text-2xl cursor-pointer bg-red-600 hover:bg-red-700 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="podcasts-apple">
+                        <a href="https://podcasts.apple.com/sa/podcast/%D9%85%D9%8A%D9%86%D8%A7-%D9%85%D8%B9-%D9%86%D8%A7%D9%8A%D9%81-%D8%B7%D8%A7%D9%85%D9%8A/id1631408696" target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#222] hover:bg-[#111] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                    <div class="podcasts-google">
+                        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjc2MTg2NTA1Mi9zb3VuZHMucnNz?sa=X&ved=0CAMQ4aUDahcKEwiAy-jGseX6AhUAAAAAHQAAAAAQAQ&hl=ar" target="_blank" class="insta text-white text-2xl cursor-pointer bg-amber-700 hover:bg-amber-800 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/mena_podcast/" target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#e1306c] hover:bg-[#c13584] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot px-5 py-5 text-[#2b79d7]">
+                <p class="w-fit mx-auto">&copy; 2024جميع الحقوق محفوظة لبودكاست مينا</p>
+            </div>
+        </footer>
+        <!-- ********** End Footer ********** -->
+    </div>
+
+    <!-- Start JS Files -->
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>

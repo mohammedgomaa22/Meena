@@ -1,0 +1,172 @@
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background: url(../data/background.png);
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2b79d7;
+}
+* {
+    box-sizing: border-box;
+}
+/* ----------------- */
+.box .details {
+    -webkit-line-clamp: 2!important;
+    overflow: hidden!important;
+    display: -webkit-box!important;
+    -webkit-box-orient: vertical!important;
+}
+@media(max-width: 776px) {
+    .box .details {
+        -webkit-line-clamp: 1!important;
+    }
+}
+/* ----------------- */
+/* Start Guests */
+.guest .box {
+    max-width: 320px;
+    max-height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.guest .box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 50px);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #2b79d710;
+}
+.guest .box .data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 10px;
+
+}
+.guest .box .data img {
+    width: 240px;
+    height: 220px;
+    border: 2px solid #2b79d750;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.guest .box .data .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.guest .box .data .social a {
+    color: #777;
+    transition: 0.3s;
+}
+.guest .box .data .social a:hover {
+    color: #2b79d7;
+}
+.guest .box .info {
+    padding-right: 45px;
+}
+.guest .box .info h3 {
+    margin: 30px 0 0 0;
+    font-size: 22px;
+    color: #2b79d7;
+}
+.guest .box .info p {
+    color: #2b79d7;
+    margin: 15px 0 0 0;
+}
+
+/* End Guests */
+/* Start Statistics */
+#statistics .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+#statistics .boxes .box {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-align: center;
+}
+#statistics .boxes .box:hover {
+    opacity: 1;
+}
+#statistics .boxes .box::before,
+#statistics .boxes .box::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background-color: #2b79d7;
+    transition: 1s;
+}
+#statistics .boxes .box::before {
+    left: 0;
+    bottom: 0;
+}
+#statistics .boxes .box::after {
+    right: 0;
+    top: 0;
+}
+#statistics .boxes .box:hover::before,
+#statistics .boxes .box:hover::after {
+    height: 100%;
+}
+#statistics .boxes .box .num {
+    font-size: 50px;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin: 10px 0;
+}
+#statistics .boxes .box .text {
+    font-weight: bold;
+    color: #2b79d7;
+}
+/* End Statistics */
+
+
+
+
+
+
+
+/* ********** Start Animation ********** */
+.animate-top-bottom {
+    animation: top-and-bottom 4s linear infinite;
+}
+@keyframes top-and-bottom {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+/* ********** End Animation ********** */
+
+
+
+
